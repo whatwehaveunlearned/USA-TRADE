@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+    <script src="lib/jquery-1.11.0.min.js"></script>
+    <script src="lib/jquery-ui-1.10.4.custom.min.js"></script>
+    <link rel="stylesheet" href="lib/jquery-ui-1.10.4.custom.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+.subtitle {
+    font-weight: bold;
+}
+ul ul {
+    font-family: monospace;
+}
+    </style>
+</head>
+<body>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tab1">Setup</a></li>
+            <li><a href="#tab2">Program Usage</a></li>
+            <li><a href="#tab3">Devblog</a></li>
+        </ul>
+        <span style="position:absolute;top:22px;left:500px;font-weight:bold;font-size:smaller;color:#555;">U.S. Import and Export Visualization</span>
+        <div id="tab1">
+            <h2>Setup Instructions</h2>
+            <p>Copy all files into a common folder of a webserver. A listing of all files is given below.</p>
+            <p>Browse to <a href="index.htm">index.htm</a> using a W3C standards compatible browser (we suggest using Chromium). An internet connection from the client is required.</p>
+            <p><span class="subtitle">List of files</span>
+                <ul>
+                    <!-- Keep file lists sorted alphabetically -->
+                    <li>Visualization</li>
+                    <ul>
+                        <li><a href="index.htm">index.htm</a></li>
+                        <li>setup.htm (this file)</li>
+                        <li><a href="charts.js">charts.js</a></li>
+                        <li><a href="code.js">code.js</a></li>
+                        <li><a href="filter.js">filter.js</a></li>
+                        <li><a href="map.js">map.js</a></li>
+                        <li><a href="style.css">style.css</a></li>
+                    </ul>
+                    <li>Data files</li>
+                    <ul>
+                        <li>data/hscodes.js</li>
+                        <li>data/states.js</li>
+                    </ul>
+                    <li>Libraries</li>
+                    <ul>
+                        <li>lib/chosen/chosen.css</li>
+                        <li>lib/chosen/chosen.jquery.css</li>
+                        <li>lib/chosen/chosen-sprite.png</li>
+                        <li>lib/chosen/docsupport/prism.js</li>
+                        <li>lib/chosen/docsupport/style.css</li>
+                        <li>lib/chosen/chosen-dojo-master/chosen.css</li>
+                        <li>lib/chosen/chosen-dojo-master/chosen-dojo.js</li>
+                        <li>lib/chosen/chosen-dojo-master/chosen-sprite.png</li>
+                        <li>lib/jsapi/jsapi.js</li>
+                        <li>lib/jquery-1.11.0.min.js</li>
+                        <li>lib/jquery-ui-1.10.4.custom.min.css</li>
+                        <li>lib/jquery-ui-1.10.4.custom.min.js</li>
+                        <li>lib/images/animated-overlay.gif</li>
+                        <li>lib/images/ui-bg_flat_0_aaaaaa_40x100.png</li>
+                        <li>lib/images/ui-bg_flat_75_ffffff_40x100.png</li>
+                        <li>lib/images/ui-bg_glass_55_fbf9ee_1x400.png</li>
+                        <li>lib/images/ui-bg_glass_65_ffffff_1x400.png</li>
+                        <li>lib/images/ui-bg_glass_75_dadada_1x400.png</li>
+                        <li>lib/images/ui-bg_glass_75_e6e6e6_1x400.png</li>
+                        <li>lib/images/ui-bg_glass_95_fef1ec_1x400.png</li>
+                        <li>lib/images/ui-bg_highlight-soft_75_cccccc_1x100.png</li>
+                        <li>lib/images/ui-icons_222222_256x240.png</li>
+                        <li>lib/images/ui-icons_2e83ff_256x240.png</li>
+                        <li>lib/images/ui-icons_454545_256x240.png</li>
+                        <li>lib/images/ui-icons_888888_256x240.png</li>
+                        <li>lib/images/ui-icons_cd0a0a_256x240.png</li>
+                    </ul>
+                </ul>
+            </p>
+        </div>
+        <div id="tab2">
+            <h2>Usage</h2>
+            <p>The website with the visualization is available <a href="index.htm">here</a>. See the <em>Help</em> tab on what features are available and the map key.</p>
+            <!-- TODO add project screenshot <img src="p2.png" width="60%" height="60%"> -->
+        </div>
+        <div id="tab3">
+            <h2>Development progress</h2>
+            <ul>
+                <li>2014-02-05: Team set. Start reading into the problem.</li>
+                <li>2014-02-14: Initial git repository setup on <a href="https://github.com/abrauchli/geospatialviz">GitHub</a>.</li>
+                <li>2014-02-14: Initial web page skeleton set.</li>
+                <li>2014-02-16: Working map prototype.</li>
+                <li>2014-02-19: First (failed) attempt at importing data.. copy pasting takes too long</li>
+                <li>2014-02-19: Individual research. Andreas: Data aquisition, Alberto: commodity selection/layout, Patryk: Graphs and charts.</li>
+                <li>2014-02-24: Alberto: Commodity selection prototype.</li>
+                <li>2014-02-25: Video meeting. Present and exchange ideas.</li>
+                <li>2014-02-26: Andreas: Data import complete.</li>
+                <li>2014-02-26: Real data displayed on map.</li>
+                <li>2014-02-27: Video meeting. Individual work continues.</li>
+                <li>2014-03-01: Convenience filtering functions for table.</li>
+                <li>2014-03-02: Video meeting. Discuss new code and alpha 1 goals.</li>
+                <li>2014-03-02: Patryk implemented some chart demos.</li>
+                <li>2014-03-03: Alpha 1 release.</li>
+                <li>2014-03-06: Bind world-map to state, year, import/export type selection and data.</li>
+                <li>2014-03-08: Andreas implemented Import-Export difference visualization on world map.</li>
+                <li>2014-03-10: Alberto implemented Sankey chart.</li>
+                <li>2014-03-11: Hawaii classroom demo.</li>
+                <li>2014-03-14: Alberto changed year selection from dropdown to buttons.</li>
+                <li>2014-03-16: Alberto improved the overall page sexiness.</li>
+                <li>2014-03-17: Andreas spent whole weekend getting the world export map to display with aggregated selected states/years.</li>
+                <li>2014-03-18: Hawaii classroom demo.</li>
+                <li>2014-03-19: Final sprint. Alberto: Commodity charts and UI fixes, Andreas: Hook up charts to data/filters, Patryk: Help text</li>
+            </ul>
+            <h2>Development findings (special picks)</h2>
+            <p>Just because you use a library doesn't mean the work is done. We found that the time spent to customize the library feature is unfortunately non-negligible. Also some features such as coloring individual strands in the sankey chart are simply not available.</p>
+            <p>There is generally the question of how to aggregate data when selecting multiple states/years on a map. Since drawing zoomable mini-charts inside a country is not easily possible with the library's functionality, we thus resorted to adding the numbers together to generate a compound value that is used to color the country.</p>
+            <p>We used git as source control tool, this proved to be a good decision and made life at merging much easier. Two of the three team members were new to git.</p>
+            <h2>Used libaries</h2>
+            <p><span class="subtitle">Google Visualization API</span> All graphs and charts rely on the Google Visualization API for rendering.</p>
+            <p><span class="subtitle">jQuery</span> As base javascript framework, jQuery is used. This makes it easy to capture and process events.</p>
+            <p><span class="subtitle">chosen</span> A widget for tag lists.</p>
+            <p><span class="subtitle">Raw Data</span> Google visualization tables are used. The also allow users to sort the data.</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function() { $('#tabs').tabs() });;
+    </script>
+</body>
+</html>
